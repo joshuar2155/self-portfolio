@@ -1,31 +1,47 @@
 :root {
     --color: black;
-    --background: lightblue;
+    --background: rgb(109, 188, 214);
+    --altbackground: rgb(193, 223, 233); 
     --titles: 40px;
     --subtitles: 30px;
 }
 
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    var(--background);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
 }
+
+body {
+    background-color: var(--altbackground);
+}
+
+nav {
+    background-color: var(--finlandia);
+    padding: 2%;
+  }  
+
+  ul {
+    text-align: center;
+  }  
 
 header {
     text-align: center;
     font-size: var(--titles);
-    background-color: aquamarine;
+    background-color: var(--background);
     padding: 10px;
 }
 
-.links a {
+.links li {
+    display: inline;
     padding: 20px;
     font-size: 15px;
     text-decoration: underline;
 }
 
 .subtitle {
+    background-color: aquamarine;
     padding: 20px;
+    height: 40px; 
     text-align: right;
 }
 
