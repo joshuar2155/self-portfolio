@@ -15,11 +15,8 @@ To get this development environment running, open the code to your browser and r
 
 ## Usage
 
-Usages for this project are to practice semantics and the fundamentals.
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+assets\screenshot.png.png
+assets\screenshot.png (2).png
 
 ## License
 
@@ -47,3 +44,5 @@ SOFTWARE.
 
 
 # Link
+
+https://github.com/joshuar2155/self-portfolio
