@@ -1,3 +1,4 @@
+/*Overall site roots and global styles*/
 :root {
     --color: black;
     --background: rgb(34, 113, 139);
@@ -15,33 +16,13 @@ body {
     background-color: var(--altbackground);
 }
 
+/* Navigation and Subtitle*/
 nav {
     background-color: rgb(255, 255, 255);
     padding: 2%;
   }  
 
-.top-links {
-    text-align: center;
-  }  
-
-header {
-    text-align: center;
-    font-size: var(--titles);
-    background-color: var(--background);
-    color: white;
-    padding: 10px;
-}
-
-.title {
-    font-size: var(--subtitles);
-}
-
-section {
-    position: relative;
-    text-align: center;
-  }
-
-.top-links li {
+  .top-links li {
     display: inline;
     padding: 20px;
     font-size: 15px;
@@ -56,7 +37,50 @@ section {
     color: white;
 }
 
+.top-links {
+    text-align: center;
+  }  
+
+header {
+    text-align: center;
+    font-size: var(--titles);
+    background-color: var(--background);
+    color: white;
+    padding: 10px;
+}
+
+/*Work Section*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex: 4;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+/*Variable link to all titles*/
+.title {
+    font-size: var(--subtitles);
+}
+
+section {
+    position: relative;
+    text-align: row;
+  }
+
 .contact a {
     text-decoration: underline;
     padding: 20px;
 }
+
+/*media section for smaller screens*/
+
+@media screen and (max-width: 768px) {
+    section,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
